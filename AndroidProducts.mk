@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_X00TD.mk
+    $(LOCAL_DIR)/syberia_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    rr_X00TD-user \
-    rr_X00TD-userdebug \
-    rr_X00TD-eng
+    syberia_X00TD-user \
+    syberia_X00TD-userdebug \
+    syberia_X00TD-eng

@@ -19,8 +19,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common RR stuff
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Inherit some common Syberia stuff
+$(call inherit-product, vendor/syberia/common.mk)
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -28,7 +28,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00TD
 PRODUCT_MANUFACTURER := asus
-PRODUCT_NAME := rr_X00TD
+PRODUCT_NAME := syberia_X00TD
 PRODUCT_MODEL := ASUS_X00TD
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
@@ -45,8 +45,3 @@ BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
-
-# RR Stuffs
-TARGET_FACE_UNLOCK_SUPPORTED := true
-RR_BUILDTYPE := Official
-BUILD_RR_WALLPAPERS:= true
